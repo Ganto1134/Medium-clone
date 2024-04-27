@@ -13,8 +13,10 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 10;
   background-color: #ffc017;
+  transition-property: background-color;
+  transition-duration: 0.7s;
 }
 nav img {
   padding-left: 10%;
@@ -46,6 +48,8 @@ nav button {
   color: white;
   padding: 0.6rem;
   border: none;
+  transition-property: background-color;
+  transition-duration: 0.7s;
 }
 
 .white {
@@ -62,13 +66,14 @@ header {
   margin-top: 4rem;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 #header {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #191919;
-  padding: 5.5rem 0;
+  padding: 5rem 0;
 }
 
 .title {
@@ -80,7 +85,8 @@ header {
 
 #header h1 {
   font-family: "Spectral", serif;
-  font-size: 6.5rem;
+  font-size: 7rem;
+  font-weight: 500;
 }
 
 #header p {
@@ -110,6 +116,11 @@ header {
 
 /* main */
 
+main {
+  z-index: 2;
+  position: relative;
+}
+
 #articoliSopra,
 #secondoPezzo {
   width: 65%;
@@ -135,7 +146,7 @@ section h2 img {
   margin-right: 0.5rem;
 }
 
-#section1 {
+#sezione {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -333,4 +344,215 @@ h4 {
 
 .quadrato img {
   border-radius: 4px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  nav {
+    padding-right: 18%;
+  }
+
+  .title {
+    padding: 1rem 0;
+    padding-left: 2.5rem;
+  }
+  #MMM {
+    width: 67%;
+    right: -150px;
+  }
+
+  nav li {
+    padding: 0 0.4rem;
+  }
+
+  nav button {
+    font-size: 0.8rem;
+  }
+
+  #header button {
+    width: 35%;
+  }
+
+  #header h1 {
+    font-size: 4rem;
+  }
+
+  #header p {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+
+  #header {
+    padding-bottom: 3rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  #sezione {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    column-gap: 0.2rem;
+  }
+
+  article {
+    display: flex;
+    flex-direction: row;
+    width: 48%;
+  }
+
+  .stellina {
+    display: none;
+  }
+
+  #secondoPezzo {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #articoliSopra,
+  #secondoPezzo {
+    width: 95%;
+    margin: auto;
+  }
+
+  #latoDestro {
+    margin: 0;
+    margin-top: 1rem;
+    width: 95%;
+    margin-bottom: 2rem;
+  }
+  .quadrato img {
+    border-radius: 100%;
+  }
+
+  #finale {
+    row-gap: 0;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .articolo {
+    width: 95%;
+    padding: 0;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav li {
+    display: none;
+  }
+
+  nav {
+    font-size: 0.8rem;
+    padding-right: 1rem;
+    z-index: 10;
+  }
+
+  nav button {
+    font-size: 0.7rem;
+    padding: 0.7rem;
+  }
+
+  #header button {
+    width: 50%;
+    padding: 0.2rem;
+  }
+
+  nav li:last-child {
+    display: unset;
+  }
+
+  #header {
+    padding-top: 0;
+  }
+
+  #MMM {
+    display: none;
+  }
+
+  #header h1 {
+    font-size: 4rem;
+    padding-top: 2rem;
+  }
+
+  #header p {
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+
+  #header {
+    padding-bottom: 3rem;
+  }
+
+  .title {
+    padding-left: 2rem;
+  }
+
+  nav img {
+    padding: 0;
+    width: 70%;
+  }
+
+  #articoliSopra {
+    width: 95%;
+    margin: auto;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  article a p {
+    width: 90%;
+  }
+
+  #secondoPezzo {
+    width: 95%;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #latoDestro {
+    margin: auto;
+    width: 95%;
+    position: static;
+    padding-left: 3rem;
+  }
+
+  #finale {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .immagineArticolo img {
+    height: 5rem;
+    width: auto;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+
+  #centro p {
+    font-size: 0.7rem;
+  }
+  .testoArticolo {
+    margin-right: 0.5rem;
+  }
+  .parteSotto {
+    font-size: 0.7rem;
+  }
+  .parteSotto button {
+    font-size: 0.7rem;
+  }
 }
