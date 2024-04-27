@@ -347,16 +347,12 @@ h4 {
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
-  nav {
-    padding-right: 18%;
-  }
-
   .title {
     padding: 1rem 0;
     padding-left: 2.5rem;
   }
   #MMM {
-    width: 67%;
+    width: 80%;
     right: -150px;
   }
 
@@ -379,6 +375,7 @@ h4 {
   #header p {
     font-size: 1.3rem;
     font-weight: 300;
+    width: 60%;
   }
 
   #header {
@@ -511,11 +508,15 @@ h4 {
   }
 
   article a p {
-    width: 90%;
+    width: 100%;
+  }
+
+  .stellina {
+    display: none;
   }
 
   #secondoPezzo {
-    width: 95%;
+    width: 90%;
     padding: 0;
     margin: auto;
     display: flex;
@@ -524,35 +525,55 @@ h4 {
   }
 
   #latoDestro {
-    margin: auto;
     width: 95%;
+    margin: auto;
     position: static;
-    padding-left: 3rem;
+    margin-top: 3rem;
   }
 
   #finale {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .immagineArticolo img {
-    height: 5rem;
+    height: 7rem;
     width: auto;
   }
+
+  h3 {
+    font-size: 0.7rem;
+  }
+
   h4 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   #centro p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
+
   .testoArticolo {
     margin-right: 0.5rem;
   }
+
   .parteSotto {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
+
   .parteSotto button {
+    font-size: 0.6rem;
+  }
+
+  .articolo {
+    margin-bottom: 2rem;
+  }
+
+  .allAside button {
+    padding: 0.5rem 0.3rem;
+  }
+
+  .allAside p {
     font-size: 0.7rem;
   }
 }
