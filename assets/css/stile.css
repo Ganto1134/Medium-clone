@@ -48,6 +48,13 @@ nav button {
   border: none;
 }
 
+.white {
+  background-color: white;
+}
+.green {
+  background-color: #1a8917;
+}
+
 /* header */
 
 header {
@@ -59,14 +66,14 @@ header {
 
 #header {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #191919;
+  padding: 5.5rem 0;
 }
 
 .title {
   padding: 1rem 0;
-  padding-left: 12%;
+  padding-left: 17%;
   display: flex;
   flex-direction: column;
 }
@@ -79,8 +86,8 @@ header {
 #header p {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
-  padding: 2.5rem 0;
-  width: 80%;
+  padding: 1.5rem 0 2rem 0;
+  width: 65%;
 }
 #header button {
   width: 30%;
@@ -92,6 +99,13 @@ header {
   color: white;
   background-color: #191919;
   font-weight: bold;
+}
+
+#MMM {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
 }
 
 /* main */
@@ -155,24 +169,24 @@ article {
 
 .autore span {
   font-size: 0.8rem;
+  font-weight: 700;
 }
 
 article a {
   text-decoration: none;
   color: #191919;
-  font-weight: bold;
   font-size: large;
 }
 
 article p {
   font-family: "Roboto", sans-serif;
   margin-bottom: 1rem;
-  font-size: 1rem;
-  font-weight: bolder;
+  font-size: 0.9rem;
+  font-weight: 800;
 }
 article p img {
   margin-left: 0.3rem;
-  width: 1rem;
+  width: 1.2rem;
 }
 
 .data {
@@ -180,16 +194,18 @@ article p img {
   display: flex;
   align-items: center;
   font-size: 0.8rem;
+  font-weight: bold;
 }
 
 /* articoli finali */
 
 #secondoPezzo {
   margin-top: 4rem;
+  display: flex;
+  justify-content: center;
 }
 
 .articolo {
-  width: 70%;
   display: flex;
   margin-bottom: 3rem;
 }
@@ -198,11 +214,14 @@ article p img {
   display: flex;
   flex-direction: column;
   width: 65%;
+  margin-right: 2rem;
 }
 
 h3 {
   display: flex;
   align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 h3 img {
@@ -212,13 +231,14 @@ h3 img {
 }
 
 h4 {
-  margin-top: 0.5rem;
-  font-weight: bold;
-  font-size: 1.5rem;
+  margin-top: 0.3rem;
+  font-weight: 800;
+  font-size: 1.2rem;
 }
 
 .testoArticolo p {
-  margin: 1rem 0;
+  margin-top: 0.6rem;
+  margin-bottom: 0.5rem;
   color: #89898a;
 }
 
@@ -226,12 +246,16 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 0.9rem;
 }
-.ultimoPezzo {
+
+.parteSotto div {
   display: flex;
-  align-items: center;
-  color: #89898a;
 }
+.parteSotto div img {
+  margin-left: 1rem;
+}
+
 .testoArticolo button {
   background-color: #c6c6c67c;
   transition: background-color 0.2s ease-in-out;
@@ -239,8 +263,74 @@ h4 {
   padding: 0.3rem 0.7rem;
   border: none;
   color: #89898a;
+  font-size: 0.9rem;
 }
 
 .testoArticolo button:hover {
+  background-color: #ffc017;
+}
+
+.immagineArticolo img {
+  height: 9.5rem;
+  width: auto;
+}
+
+/* parte destra */
+
+#latoDestro {
+  margin-left: 3rem;
+  width: 60%;
+}
+
+.allAside {
+  width: 100%;
+  position: sticky;
+  top: 5.5rem;
+}
+
+.allAside p {
+  color: #191919;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.allAside button {
+  color: #757575;
   background-color: white;
+  border: 2px solid #ebecec;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  margin-left: 0;
+}
+
+#finale {
+  border-top: 1px solid #ebecec;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  width: 90%;
+}
+
+#finale a {
+  text-decoration: none;
+  color: #757575;
+  font-size: 0.9rem;
+}
+
+#finale div {
+  margin-right: 1.3rem;
+}
+
+.magia {
+  transition: 250ms ease-in;
+  opacity: 1;
+}
+
+.quadrato img {
+  border-radius: 4px;
 }
