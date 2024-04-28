@@ -9,8 +9,7 @@
     <meta name="description" content="Medium the best site for news" />
     <title>Medium</title>
   </head>
-
-  <body>
+  <body>   <!-- fatto responsive fino a 480px per smartphone e 767px per tablet piccoli -->
     <nav>
       <div>
         <img src="./assets/imgs/svg/logo.svg" alt="logo di Medium" />
@@ -9373,7 +9372,7 @@
               </h3>
             </div>
             <div id="centro">
-              <h4>How Old is Old?</h4>
+              <h4><a href="#">How Old is Old?</a></h4>
               <p>
                 What we consider “old” changes dramatically with age, and our
                 perspectives can be predictive of how well we age
@@ -9410,7 +9409,7 @@
               </h3>
             </div>
             <div id="centro">
-              <h4>Is Taylor Swift Allowed to Speak About Fat?</h4>
+              <h4><a href="#">Is Taylor Swift Allowed to Speak About Fat?</a></h4>
               <p>
                 Can you speak about your trauma if you don't look traumatized?
               </p>
@@ -9431,7 +9430,7 @@
             <div class="immagineArticolo">
             <img
               src="./assets/imgs/image10.jpeg"
-              alt="generazioni della vita"
+              alt="Photo of Taylor Swift"
             />
           </div>
           </div>
@@ -9446,7 +9445,7 @@
               </h3>
             </div>
             <div id="centro">
-              <h4>Don’t Screw Up, You Will Be Found Guilty</h4>
+              <h4><a href="#">Don’t Screw Up, You Will Be Found Guilty</a></h4>
               <p>
                 Software Engineer, yours is the right to produce high-quality work at all times, also the liability.
               </p>
@@ -9467,7 +9466,7 @@
             <div class="immagineArticolo">
             <img
               src="./assets/imgs/image12.png"
-              alt="generazioni della vita"
+              alt="painting of engineers"
             />
           </div>
           </div>
@@ -9482,7 +9481,7 @@
               </h3>
             </div>
             <div id="centro">
-              <h4>Leave No Trace</h4>
+              <h4><a href="#">Leave No Trace</a></h4>
               <p>
                 How product designers can break from the status quo and help our planet
               </p>
@@ -9503,7 +9502,7 @@
             <div class="immagineArticolo">
             <img
               src="./assets/imgs/image14.png"
-              alt="generazioni della vita"
+              alt="painting of a forest"
             />
           </div>
           </div>
@@ -9518,7 +9517,7 @@
               </h3>
             </div>
             <div id="centro">
-              <h4>Variability, Not Repetition, is the Key to Mastery
+              <h4><a href="#">Variability, Not Repetition, is the Key to Mastery</a>
               </h4>
               <p>
                 Bruce Lee is reported to have said, “I fear not the man who has practiced 10,000 kicks once, but the man who has practiced one kick 10,000...
@@ -9540,7 +9539,7 @@
             <div class="immagineArticolo">
             <img
               src="./assets/imgs/image16.jpg"
-              alt="generazioni della vita"
+              alt="foto di Bruce Lee"
             />
           </div>
           </div>
@@ -9555,7 +9554,7 @@
               </h3>
             </div>
             <div id="centro">
-              <h4>What I Overheard as an Escape Room Actor</h4>
+              <h4><a href="#">What I Overheard as an Escape Room Actor</a></h4>
               <p>
                 Lock a group of people in a room and you’ll witness some surprising confessions
               </p>
@@ -9576,7 +9575,7 @@
             <div class="immagineArticolo">
             <img
               src="./assets/imgs/image18.jpeg"
-              alt="generazioni della vita"
+              alt="red room"
             />
           </div>
           </div>
@@ -9591,8 +9590,8 @@
               </h3>
             </div>
             <div id="centro">
-              <h4>6 Steps for Setting Measurable Goals to Avoid “Productivity Paranoia”
-              </h4>
+              <h4><a href="#">6 Steps for Setting Measurable Goals to Avoid “Productivity Paranoia”
+              </a></h4>
               <p>
                 With more people working in remote and hybrid environments than ever before, company, team and individual goals must be explicit and…
               </p>
@@ -9613,7 +9612,7 @@
             <div class="immagineArticolo">
             <img
               src="./assets/imgs/image20.jpg"
-              alt="generazioni della vita"
+              alt="soft skills"
             />
           </div>
           </div>
@@ -9649,10 +9648,9 @@
   </main>
   <script>
     // cambio classe che ha colore id background diverso per l'effetto
-    //non è smooth ma produce l'effetto
       window.addEventListener("scroll", (e) => {
-          const navigazione = document.querySelector("nav");
-          const bottone = document.querySelector("nav button");
+          let navigazione = document.querySelector("nav");
+          let bottone = document.querySelector("nav button");
           e.preventDefault();
           if (window.scrollY >= 375) {   // sul mio schermo lo cambiava poco prima dall'header quindi veniva bene
           navigazione.classList.add("white");
@@ -9670,16 +9668,16 @@
       return x[Math.floor(Math.random() * x.length)];
   }
   
-  function lettereAnimate() {
-      let switchTrue = selectRandom(Array.from(mRandom));
-      if (switchTrue.classList.contains('magia')) {
-          switchTrue.classList.remove('magia');
+  function animazione() {
+      let m = selectRandom(Array.from(mRandom));
+      if (m.classList.contains('magia')) {
+          m.classList.remove('magia');
       } else {
-          switchTrue.classList.add('magia');
+          m.classList.add('magia');
       }
   };
   
-  setInterval(lettereAnimate, 2);  // il tempo che mi sembrava più simile all'originale
+  setInterval(animazione, 2);  // il tempo che mi sembrava più simile all'originale
   </script>
   </body>
 </html>
