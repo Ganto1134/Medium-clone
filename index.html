@@ -9,7 +9,7 @@
     <meta name="description" content="Medium the best site for news" />
     <title>Medium</title>
   </head>
-  <body>   <!-- fatto responsive fino a 480px per smartphone e 767px per tablet piccoli -->
+  <body>   <!-- fatto responsive fino a 480px per smartphone e 767px per tablet piccoli, e in generale desktop con scheda aperta full -->
     <nav>
       <div>
         <img src="./assets/imgs/svg/logo.svg" alt="logo di Medium" />
@@ -9652,7 +9652,7 @@
           let navigazione = document.querySelector("nav");
           let bottone = document.querySelector("nav button");
           e.preventDefault();
-          if (window.scrollY >= 375) {   // sul mio schermo lo cambiava poco prima dall'header quindi veniva bene
+          if (window.scrollY >= 350) {   // sul mio schermo lo cambiava poco prima dall'header quindi veniva bene
           navigazione.classList.add("white");
           bottone.classList.add("green");
           } else {
